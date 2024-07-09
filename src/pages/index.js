@@ -93,6 +93,10 @@ export default function Home() {
             className="w-full grid grid-cols-1 md:grid-cols-2 md:flex-row bg-brand-4 rounded-2xl overflow-hidden shadow-lg border border-brand-3">
             <div className="relative min-h-[24rem]">
               <Image src={it01} layout="fill" objectFit="cover"/>
+              <div className="bg-brand-1 absolute grid grid-cols-2 items-center bottom-0 inset-x-0 h-[4rem] divide-x-4">
+                <p className="text-white text-center">Testigo</p>
+                <p className="text-white text-center">Providencial 15:5</p>
+              </div>
             </div>
             <div className="flex flex-col px-12 py-16 flex-grow">
               <p className="ft-4">Lupe González <span className="ft-1">(San Luis Potosí)</span></p>
@@ -108,6 +112,10 @@ export default function Home() {
             className="w-full grid grid-cols-1 md:grid-cols-2 md:flex-row bg-brand-4 rounded-2xl overflow-hidden shadow-lg border border-brand-3">
             <div className="relative min-h-[24rem]">
               <Image src={it02} layout="fill" objectFit="cover"/>
+              <div className="bg-brand-1 absolute grid grid-cols-2 items-center bottom-0 inset-x-0 h-[4rem] divide-x-4">
+                <p className="text-white text-center">Testigo</p>
+                <p className="text-white text-center">Providencial 15:5</p>
+              </div>
             </div>
             <div className="flex flex-col px-12 py-16 flex-grow">
               <p className="ft-4">Agroberries <span className="ft-1">(Jalisco)</span></p>
@@ -123,6 +131,10 @@ export default function Home() {
             className="w-full grid grid-cols-1 md:grid-cols-2 md:flex-row bg-brand-4 rounded-2xl overflow-hidden shadow-lg border border-brand-3">
             <div className="relative min-h-[24rem]">
               <Image src={it03} layout="fill" objectFit="cover"/>
+              <div className="bg-brand-1 absolute grid grid-cols-2 items-center bottom-0 inset-x-0 h-[4rem] divide-x-4">
+                <p className="text-white text-center">Testigo</p>
+                <p className="text-white text-center">Providencial 15:5</p>
+              </div>
             </div>
             <div className="flex flex-col px-12 py-16 flex-grow">
               <p className="ft-4">Jaime Camacho <span className="ft-1">(Nayarit)</span></p>
