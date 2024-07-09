@@ -6,23 +6,23 @@ export default function Faqs() {
   const questions = [
     {
       q: "¿Qué tan efectivo es Providencial 15:5 contra enfermedades específicas?",
-      a: "Probado y 100% efectivo contra una amplia gama de enfermedades fitopatógenas."
+      a: "Probado y 100% efectivo contra una amplia gama de enfermedades como: Fusarium, Rhizoctonia, Antracnosis, Roya, Cenicilla, Peca bacteriana, Mildui, entre otras."
     },
     {
       q: "¿En qué momento puedo comenzar a ver resultados?",
-      a: "Si tus cosechas tienen alguna enfermedad, a partir del día 4 podrás ver las mejorías. En caso de que se presenten sanas y lo uses de manera preventiva, podrás ver resultados desde el primer día."
+      a: "Resultados de control de enfermedades de 36 a 48 horas después de aplicar Providencial 15:5. Para mejores resultados como preventivo y potenciador de crecimiento."
     },
     {
       q: "¿Es seguro mezclarlo con otros productos?",
-      a: "Evita mezclarlo con otros productos que puedan ser contraproducentes para tus plantas, Providencial 15:5 cuenta con los activos necesarios para ayudar y cuidar tus cultivos."
+      a: "EVITA MEZCLARLO con otros productos, Providencial 15:5 se aplica únicamente con agua."
     },
     {
       q: "¿Providencial 15:5 se puede utilizar en cualquier cultivo?",
-      a: "Sí! Providencial 15:5 se puede utilizar en cualquier cultivo."
+      a: "Sí! Providencial 15:5 se puede utilizar en cualquier cultivo. Aplica 500 ml diluido en 200 litros de agua directo a la raíz y foliar. Repetir la aplicación a los 15 o 20 días después de la primer aplicación."
     },
     {
       q: "¿Qué hace a Providencial 15:5 diferente de otros productos similares?",
-      a: "Su fórmula orgánica que no genera resistencia ni un intérvalo de seguridad y su garantía de rendimiento lo hacen único en el mercado."
+      a: "Su fórmula a base de ácidos carboxílicos como fungicida bactericida y potenciador de crecimiento la hace única. No genera resistencia, 0 días de intervalo de seguridad, es un producto orgánico."
     }
   ]
 

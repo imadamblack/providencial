@@ -13,12 +13,12 @@ import i13 from '../../public/landing/07.png';
 import it01 from '../../public/landing/t01.png';
 import it02 from '../../public/landing/t02.png';
 import it03 from '../../public/landing/t03.png';
-import ico01 from '../../public/landing/icons/ico-botella.png'
-import ico02 from '../../public/landing/icons/ico-botellas-5.png'
-import ico03 from '../../public/landing/icons/ico-botellas-caja.png'
-import ico04 from '../../public/landing/icons/ico-etiqueta.png'
-import ico05 from '../../public/landing/icons/ico-crecimiento.png'
-import ico06 from '../../public/landing/icons/ico-entrega.png'
+import ico01 from '../../public/landing/icons/ico-botella.png';
+import ico02 from '../../public/landing/icons/ico-botellas-5.png';
+import ico03 from '../../public/landing/icons/ico-botellas-caja.png';
+import ico04 from '../../public/landing/icons/ico-etiqueta.png';
+import ico05 from '../../public/landing/icons/ico-crecimiento.png';
+import ico06 from '../../public/landing/icons/ico-entrega.png';
 import Faqs from '../components/faqs';
 
 export default function Home() {
@@ -31,7 +31,8 @@ export default function Home() {
 
   const cta = {
     main: 'Mándanos un WhatsApp',
-    description: 'Solicita una asesoría de nuestro ingeniero sin costo',
+    // description: 'Solicita una asesoría de nuestro ingeniero sin costo',
+    description: 'Controla enfermedades como: Fusarium, Rhizoctonia, Antracnosis, Roya, Cenicilla, Peca bacteriana, Mildui, entre otras. ',
   };
 
   return (
@@ -43,11 +44,12 @@ export default function Home() {
         <div className="container w-full text-center md:text-left text-white z-10 p-8">
           <h1
             className="md:w-2/3 relative font-medium ft-11 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            Reduce hasta un 90% las enfermedades fitopatógenas y aumenta tu producción agrícola al menos un 15%
+            Reduce hasta un 90% las enfermedades fitopatógenas y aumenta el rendimiento de tu cosecha al menos un 15%
           </h1>
+          <p className="md:w-2/3 ft-2 font-medium md:text-left my-12">{cta.description}</p>
           <div className="flex flex-col justify-center md:justify-start items-center md:items-start mt-12">
-            <p className="ft-2 font-medium md:text-left mb-12">{cta.description}</p>
             <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <p className="-ft-2 md:text-left mb-12">Conoce todos los beneficios de Providencial 15:5</p>
           </div>
         </div>
         <div className="absolute flex flex-col justify-center items-center text-white bottom-8 mt-8 md:mt-20 z-10">
@@ -65,13 +67,14 @@ export default function Home() {
           <p className="-ft-2" style={{marginBlockEnd: 0}}>Conoce los principales beneficios en 4 min</p>
         </div>
         <p className="ft-2">
-          Queremos que tengas cures tus plantas en tiempo exprés y tengas cultivos más saludables y fuertes, libres de
-          hongos y enfermedades.<br/><br/>
+          Queremos que tus plantas estén más saludables, fuertes, libres de hongos y bacterias.
+          <br/><br/>
           <nobr>Providencial 15:5</nobr>
-          es un producto creado para que no tengas que andar invirtiendo en una mezcla de químicos
+          es un potente fungicida, bactericida y potenciador de crecimiento,
+          creado para que no tengas que andar invirtiendo en una mezcla de químicos
           para el tallo, para la raíz, para la hoja,
           para el fruto y sabe cuanta madre...<br/><br/>
-          Y así, produzcas más, con más calidad y sigas poniendo en alto la agricultura de México.
+          Queremos que produzcas más, con más calidad y sigas poniendo en alto la agricultura de México.
         </p>
         <div className="flex flex-col justify-center items-center">
           <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
@@ -81,7 +84,7 @@ export default function Home() {
 
       <Blockbuster
         overhead="Garantías"
-        title="Las cosechas de nuestros clientes son nuestra mejor garantía"
+        title="Las cosechas de nuestros clientes son nuestra mayor satisfacción y garantía"
         image={i13}
       />
       <section className="my-16">
@@ -132,9 +135,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center mt-16">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
-          <p className="-ft-2 text-center">{cta.description}</p>
+        <div className="reading-container">
+          <div className="flex flex-col justify-center items-center mt-16">
+            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <p className="-ft-2 text-center">{cta.description}</p>
+          </div>
         </div>
       </section>
 
@@ -145,16 +150,16 @@ export default function Home() {
       />
       <section className="my-16">
         <p className="reading-container">
-          Un día andábamos perdiendo casi toda una plantación de frambuesa y para salvarla tuvimos que usar todo un
+          Te cuento una de muchas historias...<br/><br/>
+          Andábamos perdiendo casi toda una plantación de frambuesa y para salvarla tuvimos que usar todo un
           coctél de fungicidas.
           Casi no la libramos.<br/><br/>
           Y como ningún producto me funcionó, siendo un buen regio, me tuve que inventar el mío.<br/>
           <b>Estas son 3 razones para cambiar a Providencial 15:5</b>
         </p>
-
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">
           <div className="rounded-2xl border border-brand-6 p-16">
-            <h3 className="mb-8">Controla y reduce enfermedades fitopatógenas en 4 días</h3>
+            <h3 className="mb-8">Controla y reduce enfermedades fitopatógenas en menos de 48 hrs</h3>
             <p className="mb-8">Inhibe la producción de esporas y evita el proceso reproductivo de hongos y
               bacterias</p>
           </div>
@@ -168,10 +173,11 @@ export default function Home() {
             <p className="mb-8">Incrementa significativamente la calidad y el rendimiento de tus cultivos</p>
           </div>
         </div>
-
-        <div className="flex flex-col justify-center items-center">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
-          <p className="-ft-2 text-center">{cta.description}</p>
+        <div className="reading-container">
+          <div className="flex flex-col justify-center items-center">
+            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <p className="-ft-2 text-center">{cta.description}</p>
+          </div>
         </div>
       </section>
 
@@ -197,7 +203,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col px-4 py-8 flex-grow">
               <p className="text-center"><span className="ft-4 font-bold">$7,125 mxn</span> / 5 litros</p>
-              <p className="text-center -ft-1">Descuento del 10%</p>
+              <p className="text-center -ft-1">Descuento del 5%</p>
             </div>
           </div>
           <div className="w-full flex flex-col bg-white shadow-md rounded-2xl overflow-hidden">
@@ -210,39 +216,52 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="reading-container">
-          Una inversión que cura tus plantas, que genera más follaje, más flor y frutos más grandes para aumentar tu
-          exportación.</p>
-        <div className="flex flex-col justify-center items-center mt-16">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
-          <p className="-ft-2 text-center">{cta.description}</p>
+        <div className="reading-container">
+          <p className="ft-2">
+            Una inversión que cura tus plantas, que genera más follaje, más flor y frutos más grandes para aumentar tu
+            exportación.
+            <br/><br/>
+            En pocas palabras... más dinero.
+          </p>
+          <div className="flex flex-col justify-center items-center mt-16">
+            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <p className="-ft-2 text-center">{cta.description}</p>
+          </div>
         </div>
       </section>
 
       <Blockbuster
         overhead="Proceso"
-        title="¿Qué esperar al usar <nobr>Providencial 15:5</nobr>?"
+        title="¿Qué esperar al aplicar <nobr>Providencial 15:5</nobr>?"
         image={i04}
       />
       <section className="reading-container my-16">
         <p className="ft-2">
-          <b>Me gusta ser claro y por eso te voy a decir que puedes esperar al cambiar tu fungicida por Providencial
+          <b>Me gusta ser claro y por eso te voy a decir que puedes esperar al aplicar Providencial
             15:5</b>
         </p>
         <ol className="space-y-4">
-          <li className="ft-1">Hacemos una inspección de cultivos dañados con bacterias fitopatógenas</li>
-          <li className="ft-1">Aplicamos en una zona controlada para poder medir los cambios</li>
-          <li className="ft-1">En un par de semanas notas como, además de reducir las enfermedades, empieza a potenciar
-            el crecimiento
+          <li className="ft-1">Se hace una inspección del cultivo, se toman evidencias fotográficas de las enfermedades
+            por hongos y bacterias
           </li>
-          <li className="ft-1">Aplicas en zonas no dañadas como prevención contra bacterias fitopatógenas y hongos.</li>
+          <li className="ft-1">Aplicamos en una zona controlada para poder medir los cambios</li>
+          <li className="ft-1">A los 2-3 días se observa el control y la reducción de la enfermedad causada por hongos
+            y/o bacterias
+          </li>
+          <li className="ft-1">Aplicas 500ml en zonas no dañadas como prevención contra bacterias fitopatógenas y
+            hongos.
+          </li>
+          <li className="ft-1">A parte de tener una planta sana, verás el incremento de floración, amarre de fruto y
+            desarrollo vegetativo de la planta
+          </li>
           <li className="ft-1">Aumentas el rendimiento de tus cosechas hasta un 15%</li>
           <li className="ft-1">Te acompañamos con soporte post-compra y asesoramiento técnico continuo</li>
         </ol>
         <p className="ft-2">
-          Contamos con un equipo de ingenieros especializados en agricultura sustentable.
+          Contamos con un equipo técnico especializado en agricultura sustentable.
         </p>
-        <div className="flex flex-col justify-center items-center">
+
+        <div className="flex flex-col justify-center items-center mt-16">
           <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
           <p className="-ft-2 text-center">{cta.description}</p>
         </div>
@@ -256,27 +275,29 @@ export default function Home() {
       <section className="container my-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">
           <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">
-            <div className='relative w-2/3 pt-[100%]'>
-              <Image src={ico04} layout="fill" objectFit='contain'/>
+            <div className="relative w-2/3 pt-[100%]">
+              <Image src={ico04} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Recibe descuentos a partir de la compra de 5 lts</h4>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">
-            <div className='relative w-2/3 pt-[100%]'>
-              <Image src={ico05} layout="fill" objectFit='contain'/>
+            <div className="relative w-2/3 pt-[100%]">
+              <Image src={ico05} layout="fill" objectFit="contain"/>
             </div>
-            <h4 className="text-center my-8">Resultados visibles al 4to. día</h4>
+            <h4 className="text-center my-8">Resultados visibles en 48 hrs</h4>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">
-            <div className='relative w-2/3 pt-[100%]'>
-              <Image src={ico06} layout="fill" objectFit='contain'/>
+            <div className="relative w-2/3 pt-[100%]">
+              <Image src={ico06} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Envío gratis a toda la República Mexicana</h4>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
-          <p className="-ft-2 text-center">{cta.description}</p>
+        <div className="reading-container">
+          <div className="flex flex-col justify-center items-center">
+            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <p className="-ft-2 text-center">{cta.description}</p>
+          </div>
         </div>
       </section>
 
