@@ -328,15 +328,14 @@ export default function Home() {
         <div className="container">
           <div className="w-full md:w-1/2 mx-auto">
             <h2 className="font-semibold text-white tracking-wide">
-              Listo, es momento de contactar a uno de nuestros ingenieros
+              Listo, es momento de contactar a uno de nuestros técnicos
             </h2>
             <div className="mt-20 mb-12">
               <p className="ft-1 text-white">
                 Ya llegaste hasta acá, <br/>
-                ya le dedicaste unos minutos de tu valioso tiempo a saber como puedes ahorrar agua y contribuir al medio
-                ambiente.
+                ya le dedicaste unos minutos de tu valioso tiempo a saber como puedes curar tus cultivos en tiempo exprés.
                 <br/><br/>
-                Regálanos unos datos y envíanos un WhatsApp.
+                Regálanos unos datos y mándanos un WhatsApp.
               </p>
             </div>
             <OptInForm/>

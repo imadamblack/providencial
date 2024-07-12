@@ -19,6 +19,7 @@ export default function OptInForm() {
   const onSubmit = (data) => {
     setSending(true);
     data.phone = '52' + data.phone.replace(/^(MX)?\+?(52)?\s?0?1?|\s|\(|\)|-|[a-zA-Z]/g, '');
+    data.company = data.company + ' ha';
     data.origin = 'Notoriovs Landing';
 
     const _fbc = getCookie('_fbc');
@@ -95,12 +96,9 @@ export default function OptInForm() {
       <input
         {...register(
           'company',
-          {
-            required: true,
-          },
         )}
         className={errors.company && '!bg-red-200'}
-        placeholder="Nombre de tu compañía"/>
+        placeholder="Hectáreas de cultivo"/>
 
       <button
         disabled={sending}
