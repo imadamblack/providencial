@@ -38,13 +38,13 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative h-[80vh] w-full flex flex-col justify-center items-center bg-[url('/landing/17.png')] bg-cover bg-bottom">
+        className="relative min-h-[80vh] w-full flex flex-col justify-center items-center bg-[url('/landing/17.png')] bg-cover bg-bottom">
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 z-10"/>
 
         <div className="container w-full text-center md:text-left text-white z-10 p-8">
           <h1
-            className="md:w-2/3 relative font-medium ft-11 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            Reduce hasta un 90% las enfermedades fitopatógenas y aumenta el rendimiento de tu cosecha al menos un 15%
+            className="md:w-2/3 relative font-medium ft-9 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
+            Reduce al menos un 90% las enfermedades fitopatógenas y aumenta el rendimiento de tu cosecha al menos un 15%
           </h1>
           <p className="md:w-2/3 ft-2 font-medium md:text-left my-12">{cta.description}</p>
           <div className="flex flex-col justify-center md:justify-start items-center md:items-start mt-12">
@@ -69,8 +69,7 @@ export default function Home() {
         <p className="ft-2">
           Queremos que tus plantas estén más saludables, fuertes, libres de hongos y bacterias.
           <br/><br/>
-          <nobr>Providencial 15:5</nobr>
-          es un potente fungicida, bactericida y potenciador de crecimiento,
+          Providencial 15:5 es un potente fungicida, bactericida y potenciador de crecimiento,
           creado para que no tengas que andar invirtiendo en una mezcla de químicos
           para el tallo, para la raíz, para la hoja,
           para el fruto y sabe cuanta madre...<br/><br/>
@@ -195,7 +194,7 @@ export default function Home() {
 
       <Blockbuster
         overhead="Precio"
-        title="Deja de gastar un buen de lana en el coctel de productos que le avientas a tus cultivos"
+        title="Deja de gastar tanta lana en el coctel de productos que le avientas a tus cultivos"
         image={i03}
       />
       <section className="container my-16 gap-8">
@@ -229,11 +228,8 @@ export default function Home() {
           </div>
         </div>
         <div className="reading-container">
-          <p className="ft-2">
-            Una inversión que cura tus plantas, que genera más follaje, más flor y frutos más grandes para aumentar tu
-            exportación.
-            <br/><br/>
-            En pocas palabras... más dinero.
+          <p className="ft-2 text-center">
+            Una inversión inteligente que cura tus plantas y genera más rendimientos en tus cosechas.
           </p>
           <div className="flex flex-col justify-center items-center mt-16">
             <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>

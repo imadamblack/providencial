@@ -86,19 +86,32 @@ export default function OptInForm() {
       <input
         {...register(
           'phone',
-          {
-            required: true,
-          },
+          {required: true,},
         )}
         className={errors.phone && '!bg-red-200'}
         onKeyDown={restrictNumber}
         placeholder="Teléfono de WhatsApp"/>
       <input
         {...register(
-          'company',
+          'city',
+          {required: true,},
         )}
-        className={errors.company && '!bg-red-200'}
-        placeholder="Hectáreas de cultivo"/>
+        className={errors.city && '!bg-red-200'}
+        placeholder="Estado o ciudad"/>
+      <input
+        {...register(
+          'cropType',
+          {required: true,},
+        )}
+        className={errors.cropType && '!bg-red-200'}
+        placeholder="Tipo de cultivo"/>
+      <input
+        {...register(
+          'hectare',
+        )}
+        className={errors.hectare && '!bg-red-200'}
+        onKeyDown={restrictNumber}
+        placeholder="Hectáreas de cultivo (en número)"/>
 
       <button
         disabled={sending}
