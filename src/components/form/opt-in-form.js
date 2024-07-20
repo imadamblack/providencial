@@ -19,7 +19,6 @@ export default function OptInForm() {
   const onSubmit = (data) => {
     setSending(true);
     data.phone = '52' + data.phone.replace(/^(MX)?\+?(52)?\s?0?1?|\s|\(|\)|-|[a-zA-Z]/g, '');
-    data.company = data.company + ' ha';
     data.origin = 'Notoriovs Landing';
 
     const _fbc = getCookie('_fbc');
@@ -86,7 +85,7 @@ export default function OptInForm() {
       <input
         {...register(
           'phone',
-          {required: true,},
+          {required: true, maxLength: 10, minLength: 10},
         )}
         className={errors.phone && '!bg-red-200'}
         onKeyDown={restrictNumber}
