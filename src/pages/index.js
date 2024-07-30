@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Blockbuster from '../components/blockbuster';
 import Link from 'next/link';
 import OptInForm from '../components/form/opt-in-form';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import scrollDepth from '../utils/scrollDepth';
 import i02 from '../../public/landing/01.png';
 import i03 from '../../public/landing/02.png';
@@ -22,6 +22,8 @@ import ico06 from '../../public/landing/icons/ico-entrega.png';
 import Faqs from '../components/faqs';
 
 export default function Home() {
+  const [lastClick, setLastClick] = useState('');
+
   useEffect(() => {
     scrollDepth({
       values: [25, 50, 75, 100],
@@ -48,7 +50,9 @@ export default function Home() {
           </h1>
           <p className="md:w-2/3 ft-2 font-medium md:text-left my-12">{cta.description}</p>
           <div className="flex flex-col justify-center md:justify-start items-center md:items-start mt-12">
-            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <Link href="#contact">
+              <a onClick={() => setLastClick('hero')} className="button mb-4">{cta.main}</a>
+            </Link>
             <p className="-ft-2 md:text-left mb-12">Conoce todos los beneficios de Providencial 15:5</p>
           </div>
         </div>
@@ -76,7 +80,9 @@ export default function Home() {
           Queremos que produzcas más, con más calidad y sigas poniendo en alto la agricultura de México.
         </p>
         <div className="flex flex-col justify-center items-center">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+          <Link href="#contact">
+            <a onClick={() => setLastClick('story')} className="button mb-4">{cta.main}</a>
+          </Link>
           <p className="-ft-2 text-center">{cta.description}</p>
         </div>
       </section>
@@ -148,7 +154,9 @@ export default function Home() {
         </div>
         <div className="reading-container">
           <div className="flex flex-col justify-center items-center mt-16">
-            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <Link href="#contact">
+              <a onClick={() => setLastClick('testimonials')} className="button mb-4">{cta.main}</a>
+            </Link>
             <p className="-ft-2 text-center">{cta.description}</p>
           </div>
         </div>
@@ -186,7 +194,9 @@ export default function Home() {
         </div>
         <div className="reading-container">
           <div className="flex flex-col justify-center items-center">
-            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <Link href="#contact">
+              <a onClick={() => setLastClick('benefits')} className="button mb-4">{cta.main}</a>
+            </Link>
             <p className="-ft-2 text-center">{cta.description}</p>
           </div>
         </div>
@@ -232,7 +242,9 @@ export default function Home() {
             Una inversión inteligente que cura tus plantas y genera más rendimientos en tus cosechas.
           </p>
           <div className="flex flex-col justify-center items-center mt-16">
-            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <Link href="#contact">
+              <a onClick={() => setLastClick('price')} className="button mb-4">{cta.main}</a>
+            </Link>
             <p className="-ft-2 text-center">{cta.description}</p>
           </div>
         </div>
@@ -270,7 +282,9 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col justify-center items-center mt-16">
-          <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+          <Link href="#contact">
+            <a onClick={() => setLastClick('process')} className="button mb-4">{cta.main}</a>
+          </Link>
           <p className="-ft-2 text-center">{cta.description}</p>
         </div>
       </section>
@@ -303,7 +317,9 @@ export default function Home() {
         </div>
         <div className="reading-container">
           <div className="flex flex-col justify-center items-center">
-            <Link href="#contact"><a className="button mb-4">{cta.main}</a></Link>
+            <Link href="#contact">
+              <a onClick={() => setLastClick('extras')} className="button mb-4">{cta.main}</a>
+            </Link>
             <p className="-ft-2 text-center">{cta.description}</p>
           </div>
         </div>
@@ -329,12 +345,15 @@ export default function Home() {
             <div className="mt-20 mb-12">
               <p className="ft-1 text-white">
                 Ya llegaste hasta acá, <br/>
-                ya le dedicaste unos minutos de tu valioso tiempo a saber como puedes curar tus cultivos en tiempo exprés.
+                ya le dedicaste unos minutos de tu valioso tiempo a saber como puedes curar tus cultivos en tiempo
+                exprés.
                 <br/><br/>
                 Regálanos unos datos y mándanos un WhatsApp.
               </p>
             </div>
-            <OptInForm/>
+            <OptInForm
+              lastClick={lastClick}
+            />
           </div>
         </div>
       </section>
