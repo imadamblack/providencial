@@ -7,9 +7,9 @@ export const info = {
     recipients: ["info@tellusco.mx"],
     subject: "Nuevo prospecto Providencial 15:5",
   },
-  phoneNumber: "+528117990030",
+  phoneNumber: "+528134025799",
   whatsapp: {
-    value: "+528117990030",
+    value: "+528134025799",
     message: "Buen día, me puede dar más información sobre Providencial 15:5, por favor",
   },
   social: {
