@@ -11,10 +11,10 @@ export default function ThankYou() {
           <p className="text-center ft-4 mt-16">Si sólo quieres probar <nobr>Providencial 15:5</nobr></p>
           <a
             className="button-secondary !bg-brand-3 ft-4 flex justify-center items-center mt-6"
-            href={`https://articulo.mercadolibre.com.mx/MLM-2117512569-fungicida-providencial-155-fusarium-antracnosis-rhizocton-_JM`}
+            href={`https://providencial.com.mx/providencial-155`}
             target="_blank"
           >
-            Compra en MercadoLibre<span className="ml-2 material-icons">arrow_forward</span>
+            Compra en línea<span className="ml-2 material-icons">arrow_forward</span>
           </a>
           <p className="mt-4">Recuerda no mezclar con otros productos</p>
         </div>
