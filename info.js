@@ -24,6 +24,7 @@ export const info = {
     state: "Nuevo León",
   },
   optInWebhook: 'https://hook.us1.make.com/15eneoiuvmq3hqffilimvrj2ewf6eb76',
+  distributorsOptInWebhook: 'https://hook.us1.make.com/3xwuf3m83xask3rn4mdr2y7tbcxb2bdh',
   surveyRedirect: '',
   privacyNotice: "/aviso-privacidad",
   termsConditions: "/aviso-privacidad",
