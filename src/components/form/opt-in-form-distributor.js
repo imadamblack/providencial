@@ -21,7 +21,7 @@ export default function OptInFormDistributor({lastClick = ''}) {
 
   const onSubmit = (data) => {
     setSending(true);
-    data.phone = '52' + data.phone.replace(/^(MX)?\+?(52)?\s?0?1?|\s|\(|\)|-|[a-zA-Z]/g, '');
+    data.phone = '521' + data.phone.replace(/^(MX)?\+?(52)?\s?0?1?|\s|\(|\)|-|[a-zA-Z]/g, '');
     data.origin = 'Notoriovs Landing';
     data.lastClick = lastClick;
 
