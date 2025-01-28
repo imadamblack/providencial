@@ -106,7 +106,7 @@ export default function OptInFormDistributor({lastClick = ''}) {
           className={errors.city && '!bg-red-200'}
           placeholder="Estado o ciudad"
         />
-        <div className={`rounded-md px-6 py-4 bg-white ${errors.city && '!bg-red-200'}`}>
+        <div className={`rounded-md px-6 py-4 bg-white ${errors.budget && '!bg-red-200'}`}>
           <p className="mb-4">Cuál sería un estimado de compra mensual?</p>
           <Radio
             name="budget"
